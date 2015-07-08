@@ -36,6 +36,12 @@
 # Copyright 2015 Your name here, unless otherwise noted.
 #
 class facterpush {
-
+	file { "/etc/facter/facts.d":
+		ensure => "directory"
+		owner => "root",
+		group => "root",
+		mode => 0700,
+	}
+}
 
 }
